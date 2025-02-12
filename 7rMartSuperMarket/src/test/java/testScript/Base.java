@@ -55,7 +55,7 @@ public class Base {
 
 	}
 
-	@AfterMethod()
+	@AfterMethod(alwaysRun = true)
 	public void tearDown(ITestResult itResult) throws IOException {
 		// driver.quit();
 
