@@ -83,11 +83,15 @@ public class CategoryPage {
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
-		js.executeScript("window.scrollBy(0,3000)", "");
+		// Scroll to the bottom of the page
+		js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
 
-		wait.waitToElementClick(driver, btn_save);
+		// Wait for the element to be visible
+		wait.waitForVisibilityOfElement(driver, btn_save);
 
-		btn_save.click();
+		// Click using JavaScript if regular click doesn't work
+		js.executeScript("arguments[0].click();", btn_save);
+
 		return this;
 	}
 

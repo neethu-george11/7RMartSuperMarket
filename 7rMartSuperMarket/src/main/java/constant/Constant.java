@@ -24,4 +24,5 @@ public class Constant {
 	public static final String FILE_PATH = System.getProperty("user.dir") + "\\src\\main\\resources\\TestData.xlsx";
 
 	public static final String IMAGE = System.getProperty("user.dir") + "\\src\\main\\resources\\PNG Image.png";
+	public static final String CONFIG_FILE=System.getProperty("user.dir") +"\\src\\test\\resources\\config.properties";
 }

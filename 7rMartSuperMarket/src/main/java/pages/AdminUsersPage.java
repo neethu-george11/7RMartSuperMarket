@@ -77,8 +77,6 @@ public class AdminUsersPage {
 
 	public AdminUsersPage enterPassword(String password_value) {
 		
-		WaitUtility wait = new WaitUtility();
-		wait.waitForElementToBePresent(driver,txt_new_password);
 		
 		txt_new_password.sendKeys(password_value);
 		return this;
